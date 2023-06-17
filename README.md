@@ -53,7 +53,7 @@ set FLASK_APP=run <br>
 flask run
 ### Database (Database has to be created using the following commands)
 - mysql commands: <br>
-mysql -u <username> -p
+mysql -u username -p <br>
 CREATE DATABASE bookstore;
 - python3 commands: <br>
 from shop import db <br>

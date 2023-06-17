@@ -40,3 +40,23 @@ size: depending on what properties you choose your items to have).
 5. Admin page(s) enable an admin user to update the product catalogue by adding or deleting items. The admin is able to change an individual item information, such as an item’s title, description and price. The admin user is also able to view a list of all products sold on your website.
 
 6. Wishlist page enables a customer to save or delete an item, choose to view an item’s details (on the item’s individual page), and move a particular item to the shopping basket.
+
+## Basic Commands
+
+### Virtual Environment (Mac OSX)
+python3 -m venv venv
+source venv/bin/activate
+### Required Libraries
+pip install -r requirements.txt
+### Running the App
+set FLASK_APP=run <br>
+flask run
+### Database (Database has to be created using the following commands)
+- mysql commands: <br>
+mysql -u <username> -p
+CREATE DATABASE bookstore;
+- python3 commands: <br>
+from shop import db <br>
+db.create_all()
+- Creating an admin user: <br>
+UPDATE user SET is_admin=1 WHERE id=1;
